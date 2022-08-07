@@ -7,6 +7,7 @@ import br.com.jrmantovani.apprepositories.data.services.GitHubService
 import com.google.gson.GsonBuilder
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
+import org.koin.core.context.loadKoinModules
 import org.koin.core.module.Module
 import org.koin.dsl.module
 import retrofit2.Retrofit
@@ -14,6 +15,11 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 object DataModule {
     private const val OK_HTTP = "OkHttp"
+
+    fun load() {
+        loadKoinModules(networkModules() + repositoriesModule())
+    }
+
     private fun networkModules(): Module {
         return module {
             single {
