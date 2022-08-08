@@ -1,5 +1,5 @@
 # App Repositories
-App desenvolvido para listar repositorios do publicos github
+App desenvolvido no Bootcamp Santander para listar repositórios públicos do github
 
 Tecnologias utilizadas:
 
