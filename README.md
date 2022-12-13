@@ -5,7 +5,7 @@ App desenvolvido no Bootcamp Santander para listar repositórios públicos do gi
 
 
 
-##Tecnologias utilizadas:
+## Tecnologias utilizadas:
 
    - Kotlin
    - Live data
